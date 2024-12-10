@@ -1,0 +1,867 @@
+/* Medium devices (landscape tablets, 768px to 992px) */
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+    body {
+        display: block;
+        margin-top: 8px;
+        margin-left: 0;
+        margin-right: 0;
+        margin-bottom: 8px;
+    }
+
+    /*Header*/
+    .header{
+        width: 100%;
+        height: 38px;
+        margin-bottom: 10px;
+    }
+
+    #corner-icon{
+        width: 40px;
+        margin-left: 16px;
+    }
+
+    /*Search Box*/
+    input[id=search]{
+        border-radius: 50px;
+        border: none;
+        background-color: #F0F2F5;
+        padding: 8px 0px 8px 35px;
+        background-image: url('searchicon.png');
+        background-size: 13px;
+        background-position: 15px 8px; 
+        background-repeat: no-repeat;
+        margin-bottom: 80px;
+        margin-left: 65px;
+        position: relative;
+        top: -37px;
+        display: block;
+    }
+
+    /*Center Icons*/
+    #homepage{
+        left: 50%;
+        top: 11px;
+        width: 35px;
+    }
+
+    #watch{
+        display: none;
+    }
+    
+    #marketplace{
+        display: none;
+    }
+    
+    #frame{
+        display: none;
+    }
+    
+    /*Gray Background Icons*/
+    .gray{
+        position: absolute;
+        left: 74%;
+        transform: translate(-50%);
+        width: 39px;
+    }
+
+    #gray2{
+        left: 81.5%;
+    }
+
+    #gray3{
+        left: 89%;
+    }
+
+    #gray4{
+        left: 96%;
+    }
+    
+    /*Right Side Icon*/
+    .img2{
+        position: absolute;
+        top: 17px;
+        transform: translate(-50%);
+        border-radius: 0;
+        //Active
+        &:active{
+            width: 15px;
+    }
+    }
+
+    #dots-9{
+        width: 2.6%;
+        left: 74%;
+        top: 1.8%;
+    }
+
+    #messenger{
+        left: 81.5%;
+        width: 2.6%;
+        top: 1.8%;
+    }
+    
+    #bell1{
+        left: 89%;
+        width: 2.6%;
+        top: 1.8%;
+    }
+    
+    #bell2{
+        left: 96%;
+        width: 2.6%;
+        top: 1.8%;
+    }
+    
+
+    /*Banner*/
+    .banner{
+        background-image: url(mobile-banner.jpg);
+        width: 100%;
+        height: 295px;
+        left: -0%;
+        border-radius: 0;
+    }
+
+    /*Cover Header*/
+    .coverheader{
+        border-bottom: none;
+    }
+
+    #main-icon{
+        width: 168px;
+        height: 168px;
+        margin-top: -13%;
+        left: 23%;
+        position: absolute;
+    }
+
+    /*User Name*/
+    .username{
+        left: 7%;
+        top: 90%;
+        font-size: 33px;
+        font-weight: 700;
+    }
+
+    /*User Verification*/
+    .user-verify{
+        width: "20px";
+        margin-left: 34%; 
+        margin-top: -5.8%;
+    }
+
+    #mention{
+        display: none;
+    }
+
+    #seperator{
+        display: none;
+    }
+
+    #internet-company{
+        display: none;
+    }
+
+    #follower-icon{
+        margin-left: 26.5%; 
+        margin-top: 12.2%;
+        width: 15px;
+    }
+    
+    #follower-count{
+        margin-left: 29%;
+        margin-top: 12%;
+    }
+
+    /*Contact Us*/
+    .contact-button{
+        background-color: #1b74e4;
+        color: white;
+        border: none;
+        border-radius: 4.5px;
+        padding: 10px 25px 10px 40px;
+        font-size: 14px;
+        background-image: url('Link.png');
+        background-repeat: no-repeat;
+        background-position: 18px 10px;
+        background-size: 14px;
+        left: -53%;
+        top: 165%;
+        position: absolute;
+
+        &:active{
+            background-size: 12px;
+            font-size: small;
+        }
+    }
+
+    /*Share Page Text*/
+    .sharepage{
+        position: absolute;
+        font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
+        font-size: 12px;
+        margin-left: 31%;
+        margin-top: 14.7%;
+    }
+
+    /*Share Page Icon*/
+    .sharepage-icon{
+        margin-left: 29%; 
+        border-radius: 0; 
+        width: 13px; 
+        margin-top: 14.8%;
+    }
+
+    /*Pop-Up & Pop-Up Text Styling*/
+    .popuptext{
+        background-color: whitesmoke;
+        border-radius: 10px;
+        position: absolute;
+        width: 250px;
+        height: 120px;
+        text-align: center;
+        z-index: 1;
+        padding: 5px 5px 50px 8px;
+        box-shadow: 0 2px 4px 2px rgba(0, 0, 0, 0.2);
+        right: -75px;
+        top: -90px;
+        font-weight: bolder;
+        font-size: x-large;
+        font-style: italic;
+        visibility: hidden;
+    }
+
+    /*Share Popup Buttons Stylig*/
+    .sharethis-inline-share-buttons{
+        margin-top: 25px; 
+        margin-left: 8px; 
+        width: 220px;
+    }
+
+    .sharepage .show{
+        visibility: visible;
+        -webkit-animation: fadeIn 1s both;
+        animation: fadeIn 1s both;
+    }
+    
+    @-webkit-keyframes fadeIn {
+        from {opacity: 0 ;}
+        to {opacity: 1 ;}
+    }
+    
+    @keyframes fadeIn {
+        from {opacity: 0 ;}
+        to {opacity: 1 ;}
+    }
+    
+    /* The Close Button */
+    .close {
+        position: absolute;
+        top: -2%;
+        right: 4%;
+        color: #000000;
+        font-size: 20px;
+        font-weight: bold;
+        transition: 0.1s;
+
+        &:hover,
+        &:focus {
+        color: #bbb;
+        text-decoration: none;
+    }
+    }
+
+    /*Menu Like Button*/
+    .like-button{
+        background-color: #E7F3FF;
+        color: #1b74e4;
+        border: none;
+        border-radius: 4.5px;
+        padding: 10px 30px 10px 60px;
+        font-size: medium;
+        background-image: url('Like.png');
+        background-repeat: no-repeat;
+        background-position: 29px 9px;
+        position: absolute;
+        left: 49%;
+        top: 25%;
+    }
+
+    hr{
+        margin-top:71%;
+        padding-left: 16px;
+        padding-right: 16px;
+        width: 736px;
+        position: absolute;
+        border-color: lightgray;
+    }
+
+    .menu{
+        box-shadow: none;
+    }
+
+    /*Menu Messenger Button*/
+    .messenger-button{
+        display: none;
+    }
+
+    /*Menu Search Button*/
+    .search-button{
+        background-color: #E4E6EB;
+        border: none;
+        border-radius: 4.5px;
+        padding: 12px 20px 10px 50px;
+        background-image: url('Black\ search.png');
+        background-repeat: no-repeat;
+        background-position: 30px 10px;
+        position: absolute;
+        margin-left: -9%;
+        top: 25%;
+        display: block;
+    }
+
+    /*Menu Three-Dots Button*/
+    .dots-button{
+        background-color: #E4E6EB;
+        border: none;
+        border-radius: 4.5px;
+        padding: 12px 5px 8px 40px;
+        background-image: url("3 dots.png");
+        background-repeat: no-repeat;
+        background-size: 15px;
+        background-position: 14px 10px;
+        position: absolute;
+        left: 91%;
+        top: 110%;
+    }
+
+    /*Post Tab*/
+    #post-tab{
+        top: 114%;
+        z-index: 1;
+        margin-left: -110px;
+        font-weight: 600;
+        font-size: 16px;
+        font-family: "Segoe UI", Helvetica, Arial, sans-serif;
+    }
+
+    /*About Tab*/
+    #about-tab{
+        font-weight: 600;
+        font-size: 16px;
+        font-family: "Segoe UI", Helvetica, Arial, sans-serif;
+        margin-left: -7%;
+        top: 118%;
+        display: block;
+    }
+
+    /*Video Tab*/
+    #video-tab{
+        font-weight: 600;
+        font-size: 16px;
+        font-family: "Segoe UI", Helvetica, Arial, sans-serif;
+        margin-left: 2px;
+        top: 118%;
+        display: block;
+    }
+
+    /*Photo Tab*/
+    #photo-tab{
+        font-weight: 600;
+        font-size: 16px;
+        font-family: "Segoe UI", Helvetica, Arial, sans-serif;
+        margin-left: 8%;
+        top: 118%;
+        display: block;
+    }
+
+    /*More Tab*/
+    #more-tab{
+        top: 118%;
+        z-index: 1;
+        margin-left: 125px;
+        font-weight: 600;
+        font-size: 16px;
+        font-family: "Segoe UI", Helvetica, Arial, sans-serif;
+    }
+
+    /*Dropdown Tab*/
+    #dropdown-tab{
+        top: 123%;
+        z-index: 1;
+        margin-left: 135px;
+        font-weight: 600;
+        font-size: 17px;
+        font-family: "Segoe UI", Helvetica, Arial, sans-serif;
+    }
+
+    /*Lower Side*/
+    .lowerside{
+        border-top: 2px solid #e9e6e6;
+        margin-top: 77%;
+        padding: 0;   
+        overflow-x: hidden;
+        width: 100%;
+        min-height: 350vh;
+    }
+
+    /*About Section*/
+    .about-section{
+        top: 1.8%;
+        left: -15%;
+        width: 738px;
+    }
+
+    #about-heading{
+        left: 10px;
+        font-size: 22px;
+    }
+
+    #about-see-all{
+        color:#216fdb; 
+        font-size: small; 
+        font-weight:light; 
+        padding-left: 90%; 
+        margin-top: -7%;
+    }
+
+    #about-first-i{
+        width: 52px;
+        margin-left: 10px;
+        margin-top: 10px;
+    }
+    
+    #about-first-phara{
+        font-size: 14px; 
+        padding-left: 12%; 
+        padding-right: 30px;
+        margin-top: -40px;
+    }
+
+    #about-second-i{
+        width: 52px;
+        margin-left: 10px;
+    }
+    
+    #about-second-phara{
+        font-size: 14px; 
+        padding-left: 12%; 
+        padding-right: 30px;
+        margin-top: -36px;
+        line-height: 25px;
+    }
+
+    /*See More*/
+    .seemore{
+        font-family: "Segoe UI", Helvetica, Arial, sans-serif;
+        font-size: 14px;
+        font-weight: 600;
+        overflow: visible;
+        position: absolute;
+        left: 12%; 
+        bottom: 46%;
+    }
+
+    /*See Less*/
+    .seeless{
+        font-family: "Segoe UI", Helvetica, Arial, sans-serif;
+        font-size: 14px;
+        font-weight: 600;
+        position: absolute;
+        display: none; 
+        left: 12%; 
+        bottom: 31%;
+    }
+
+    #about-like-icon{
+        width: 52px;
+        margin-left: 10px;
+        bottom: -16px;
+    }
+    
+    #about-like-number{
+        font-size: 14px; 
+        padding-left: 12%; 
+        margin-top: -3%;
+    }
+    
+    #about-follow-icon{
+        width: 52px;
+        margin-left: 10px;
+        bottom: -7px;
+    }
+    
+    #about-follow-number{
+        font-size: 14px; 
+        padding-left: 12%; 
+        margin-top: -4%;
+    }
+    
+    #about-checkin-icon{
+        width: 50px;
+        margin-left: 10px;
+        bottom: -7px;
+    }
+    
+    #about-checkin-number{
+        font-size: 14px; 
+        padding-left: 12%; 
+        margin-top: -4%;
+    }
+    
+    #about-world-icon{
+        width: 52px;
+        margin-left: 10px;
+        bottom: -10px;
+    }
+    
+    #about-contact-link{
+        font-size: 14px; 
+        padding-left: 12%; 
+        margin-top: -4%;
+    }
+    
+    #about-page-icon{
+        margin-top: 1%;
+        margin-bottom: 7%; 
+        margin-left: 26px; 
+        background-image: url(file.png); 
+        background-repeat: no-repeat; 
+        background-position: 0px -300px; 
+        height: 20px;
+        width: 20px;
+    }
+    
+    #about-page-link{
+        font-size: 14px; 
+        padding-left: 12%; 
+        margin-top: -11%;
+    }
+
+    /*Photos Section*/
+    .photo-section{
+        top: 16.8%;
+        left: -15%;
+        width: 738px;
+    }
+
+    #photo-heading{
+        left: 10px;
+        font-size: 22px;
+    }
+    
+    #photo-see-all{
+        color:#216fdb; 
+        font-size: small; 
+        font-weight:light; 
+        padding-left: 90%; 
+        margin-top: -7%;
+    }
+    
+    #photo1{
+        border-top-left-radius: 10px;
+        margin-left: 12.5%;
+        width: 170px;
+        height: 120px;
+    } 
+    
+    #photo2{
+        border-top-right-radius: 0; 
+        margin-left: -1px;
+        width: 170px;
+        height: 120px;
+    } 
+    
+    #photo3{
+        border-bottom-left-radius: 0;
+        border-top-right-radius: 10px; 
+        margin-top: -10px;
+        margin-left: 1px;
+        width: 170px;
+        height: 120px;
+    } 
+    
+    #photo4{
+        border-bottom-left-radius: 10px;  
+        margin-top: -9px;
+        display: block;
+        margin-left: 12.5%;
+        width: 170px;
+        height: 120px;
+        
+    } 
+    
+    #photo5{
+        border-bottom-right-radius: 0;  
+        margin-left: 38%; 
+        margin-top: -50%;
+        width: 170px;
+        height: 120px;
+        margin-bottom: 20px;
+    } 
+    
+    #photo6{
+        border-bottom-left-radius: 10px; 
+        border-bottom-right-radius: 0; 
+        margin-left: 63.5%;  
+        margin-top: -18%;
+        margin-bottom: 20px;
+        display: block;
+        width: 170px;
+        height: 120px;
+    }
+
+    /*Video Section*/
+    .video-section{
+        top: 28%;
+        left: -15%;
+        width: 738px;
+    }
+
+    #video-heading{
+        font-size: 22px;
+        left: 10px;
+    }
+
+    #video-see-all{
+        color:#216fdb; 
+        font-size: small; 
+        font-weight:light; 
+        padding-left: 90%; 
+        margin-top: -8%;
+    }
+
+    /*Video Cover*/
+    .video-cover{
+        border-radius: 7px; 
+        width: 650px; 
+        height: 350px;
+        margin-bottom: 7px;
+        margin-left: 45px;
+        object-fit: cover;
+    }
+
+    /*Video Timing*/
+    .video-timing{
+        background-color: rgb(0, 0, 0, 0.5);
+        color: white;
+        width: 45px;
+        height: 23px;
+        bottom: 15%;
+        right: 55px;
+        padding-top: 2px;
+        font-size: 15px;
+        position: absolute;
+        border-radius: 4px;
+        text-align: center;
+    }
+
+    /*Video Title*/
+    .video-title{
+        font-family: "Segoe UI", Helvetica, Arial, sans-serif;
+        font-size: 16px;
+        font-weight: 600;
+        padding-left: 45px;
+        padding-right: 269px;
+        bottom: 14px;
+        position: relative;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+    }
+
+    #video-like-icon{
+        top: -48px;
+        z-index: 1;
+        width: 55px;
+        left: 82%;
+    }
+    
+    #video-love-icon{
+        top: -49px;
+        width: 52px;
+        left: 76%;
+    }
+
+    /*Video Count Love*/
+    .video-count-love{
+        margin-left: 89%;  
+        top: 114.7%;
+        font-size: 12px;
+        font-family: "Segoe UI", Helvetica, Arial, sans-serif;
+        position: absolute;
+    }
+
+    /*Video Couut View*/
+    .video-count-view{
+        left: 44px; 
+        margin-top: -7%; 
+        font-size: 12px; 
+        font-weight: 400; 
+        color: #65676b;
+        font-family: "Segoe UI", Helvetica, Arial, sans-serif;
+        position: relative;
+    }
+
+    /*Page transparency Section*/
+    .page-transparency-section{
+        display: none;
+    }
+
+    /*Right Side*/
+    .lowerside-right{
+        top: 42.4%;
+        left: -45%;
+        width: 738px;
+    }
+
+    /*Post Description*/
+    .post-description{
+        font-size: 15px; 
+        padding-left: 4%; 
+        padding-right: 4%; 
+        margin-top: -17%;
+        font-family: "Segoe UI", Helvetica, Arial, sans-serif;
+        position: relative;    
+    } 
+
+    .post-img{
+        border-radius: 0; 
+        width: 738px; 
+        height: 570px;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-image: url(IPAD-MINI.png);
+    }
+
+    #post-like-icon{
+        z-index: 1;
+        width: 51px;
+    }
+    
+    #post-love-icon{
+        left: -40px;
+        width: 49px;
+    }
+
+    /*Post Count Love*/
+    .post-count-love{
+        margin-left: 8%;  
+        top: -100px; 
+        margin-top: 10%;
+        font-size: 14px;
+        font-family: "Segoe UI", Helvetica, Arial, sans-serif;
+        position: relative;
+    }
+
+    #post-comment-icon{
+        border-radius: 0; 
+        left: 75%;  
+        margin-top: -18%; 
+        position: absolute;
+        width: 52px;
+    }
+    
+    #post-count-comment{
+        left: 81%; 
+        margin-top: -12.5%; 
+        top: -39px;
+        font-size: 14px;
+        font-family: "Segoe UI", Helvetica, Arial, sans-serif;
+        position: relative;  
+    }
+    
+    #post-share-icon{
+        border-radius: 0; 
+        left: 86%; 
+        margin-top: -10.5%;
+        position: absolute;
+        width: 52px;
+    }
+    
+    #post-count-share{
+        left: 92%;  
+        margin-top: -10%; 
+        margin-bottom: 2%;
+        font-size: 14px;
+        font-family: "Segoe UI", Helvetica, Arial, sans-serif;
+        position: relative;  
+    }
+
+    /*Like on Post*/
+    .count-bottom1{
+        padding: 15px 90px 15px 120px;
+        background-size: 23px;
+        background-repeat: no-repeat;
+        background-position: 80px 15px;
+        margin-left: 9%;
+        margin-top: -1%;
+        margin-bottom: 0;
+        font-size: 18px;
+    }
+
+    /*Comment on Post*/
+    .count-bottom2{
+        padding: 15px 70px 15px 110px;
+        background-size: 23px;
+        background-repeat: no-repeat;
+        background-position: 70px 17px;
+        margin-left: 13%;
+        margin-top: -1.3%;
+        font-size: 18px;
+    }
+
+    #me-profile{
+        width: 69px;
+    }
+
+    input[id=writecomment]{
+        background-image: url('Reaction.png');
+        background-repeat: no-repeat;
+        background-position: 520px 10px;
+        padding: 15px 450px 10px 10px;
+        margin-left: 10%;
+        margin-top: -6%;
+        position: absolute;
+        background-color: #F0F2F5;
+        border: 0;
+        border-radius: 20px;
+    }
+
+    #commenter-profile{
+        width: 69px;
+    }   
+    
+    #comment-background{
+        background-color: #F0F2F5; 
+        border-radius: 20px; 
+        display: inline-block; 
+        padding: 0px 10px;
+    }
+    
+    /*Commenter Name*/
+    .commenter-name{
+        font-size: 15px; 
+        font-weight: 500; 
+        cursor: pointer;
+        font-family: "Segoe UI", Helvetica, Arial, sans-serif;
+        position: relative;    
+    }
+    
+    /*Comment*/
+    .comment{
+        font-size: 15px; 
+        top: -6px;
+        font-family: "Segoe UI", Helvetica, Arial, sans-serif;
+        position: relative;    
+    }
+    
+    .comment-time{
+        font-size: 11px; 
+        left: 12%; 
+        top: -10px; 
+        color: #65676b;
+        font-family: "Segoe UI", Helvetica, Arial, sans-serif;
+        position: relative;
+    }
+}

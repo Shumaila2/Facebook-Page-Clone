@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!--Making Facebook Page Resposive-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!--Page Title-->
+        <title>Facebook - Home | Facebook</title>
+
+        <!--Favicon-->
+        <link rel="icon" type="image/x-icon" href="favicon-32x32.png">
+
+        <link rel="stylesheet" type="text/css" href="page-style.css">
+
+        <link rel="stylesheet" type="text/css" href="extra_small_devices.css">
+
+        <link rel="stylesheet" type="text/css" href="small_devices.css">
+        
+        <link rel="stylesheet" type="text/css" href="medium_devices.css">
+
+        <link rel="stylesheet" type="text/css" href="large_devices.css">
+        
+        <!--Share Buttons row-->
+        <script type="text/javascript" src="https://platform-api.sharethis.com/js/sharethis.js#property=64ba636299ed020012e4a0a2&product=inline-share-buttons&source=platform" async="async"></script>
+    </head>
+    <body>
+
+        <div class="header">
+            
+        <!--Center Icons-->
+        <img class="img1" id="homepage" src="homepage.png" onClick="window.location.reload(true)">
+        <img class="img1" id="watch" src="watch.png">
+        <img class="img1" id="marketplace" src="marketplace.png">
+        <img class="img1" id="frame" src="Frame.png">
+
+        <!--Gray Background Icon-->
+        <img class="gray" src="background.png">
+        <img id="gray2" class="gray" src="background.png">
+        <img id="gray3" class="gray" src="background.png">
+        <img id="gray4" class="gray" src="background.png">
+
+        <!--Right Side Icon-->
+        <img id="dots-9" class="img2" src="9 dots.png">
+        <img id="messenger" class="img2" src="messenger.png">
+        <img id="bell1" class="img2" src="bell.png">
+        <img id="bell2" class="img2" src="bell.png">
+            
+            <!--Search Box-->
+            <form>
+                <img id="corner-icon" src="Fcebook Icon.png" width="25px" onClick="window.location.reload(true)">
+                <input type="text" id="search" placeholder="Search Facebook">
+            </form>
+
+        </div>
+
+        <!--Upperside-->
+        <div class="upperside">
+            <!--Banner-->
+            <img class="banner" width="820px" height="312px">
+        </div>
+
+        <!--Cover Header-->
+        <div class="coverheader">
+            <!--Profile Picture-->
+            <img id="main-icon" src="Fcebook Icon.png" width="130px">
+            <!--User Name-->
+            <h2 class="username">Facebook</h2>
+            <img class="username user-verify" title="Verified Account" src="Verified.png">
+            <!--user detail-->
+            <p id="mention" class="userdetail tooltip">@facebook<span class="tooltiptext" id="mention-tooltip">Search for @facebook on Facebook or in Messenger to find this page easily</span></p>
+            <p id="seperator" class="userdetail" style="margin-left: 26%;">.</p>
+
+            <img id="follower-icon" class="userdetail" src="Star.png">
+            <p id="follower-count" class="userdetail">2.91B followers</p>
+
+            <p id="seperator" class="userdetail" style="margin-left: 41.5%;">.</p>
+            <p id="internet-company" class="userdetail">Internet company</p>
+            <!--Contact Us-->
+            <form>
+                <input type="button" id="contact" class="contact-button" value="Contact Us">
+            </form>
+            <!--Share Page-->
+            <div class="sharepage" onclick="myFunction()" ontouchstart="myFunction()">Share page 
+                <span class="popuptext" id="myPopup">Share
+                    <span class="close">&times;</span>
+                    <div class="sharethis-inline-share-buttons"></div>
+                </span>
+            </div>
+
+            <!--Share Page Icon-->
+            <img class="sharepage sharepage-icon" src="Share Page.png">
+                        
+        </div>
+
+        <hr>
+
+        <!--Menu-->
+        <div class="menu">
+
+            <!--Menu Tabs-->
+            <a id="post-tab" class="active" href="#posts">Posts</a>
+            <a id="about-tab" href="#about">About</a>
+            <a id="video-tab" href="#videos">Videos</a>
+            <a id="photo-tab" href="#photos">Photos</a>
+            <a id="more-tab" href="#more">More</a>
+            <img id="dropdown-tab" src="Dropdown.png">
+
+            <!--Menu Buttons-->
+            <form>
+                <!--Like Button-->
+                <input type="button" id="Like" class="like-button" value="Like">
+                <!--Messenger Button-->
+                <input type="button" id="Messanger" class="messenger-button" value="Messanger">
+                <!--Search Button-->
+                <input type="button" id="search-button" class="search-button">
+                <!--Three Dots-->
+                <input type="button" id="three-button" class="dots-button">
+            </form>
+        </div>
+
+        <!--Lower Side-->
+        <div class="lowerside">
+
+            <!--Left Side-->
+            <div class="about-section" id="about-section">
+                <!--About Section Text-->
+                <h3 class="about-text" id="about-heading">About</h3>
+                <p class="about-text" id="about-see-all">See all</p>
+                <!--About Section Icon and Text-->
+                <img class="about-icon" id="about-first-i" src="I icon.png">
+                <p class="about-text" id="about-first-phara">The Facebook app Page celebrates how our friends inspire us, support us, and help us discover the world when we connect.</p>
+                <!--About Section Icon and Text-->
+                <img class="about-icon" id="about-second-i" src="I icon.png">
+                <p class="about-text text-preview" id="about-second-phara">Community Values<br>
+                    We believe people can do more together than alone and that each of us plays an important role in helping to create a safe and respectful community. So, we’ve laid out a set of principles for us to follow on this Page:<br><br>
+                    Let’s celebrate the things that bring us together.<br><br>
+                    Let’s choose to treat each other like neighbors rather than strangers.<br><br>
+                    Let’s respect individuality and welcome diverse backgrounds and perspectives.<br><br>
+                    Let’s assume people mean well.<br><br>
+                    Our moderators are here for the community to uphold these values every day.</p>
+                    <!--See More-->
+                    <span class="seemore" onclick="toggleOverflow()">See more</span>
+                
+                    <span class="seeless" onclick="toggleOverflow()">See less</span><!--See Less-->
+                <!--About Section Icon and Text-->
+                <img class="about-icon" id="about-like-icon" src="black_like.png">
+                <p class="about-text" id="about-like-number">183,205,742 people like this</p>
+                <!--About Section Icon and Text-->
+                <img class="about-icon" id="about-follow-icon" src="follow.png">
+                <p class="about-text" id="about-follow-number">188,661,607 people follow this</p>
+                <!--About Section Icon and Text-->
+                <img class="about-icon" id="about-checkin-icon" src="check.png">
+                <p class="about-text" id="about-checkin-number">118 people checked in here</p>
+                <!--About Section Icon and Text-->
+                <img class="about-icon" id="about-world-icon" src="World.png">
+                <p class="about-text" id="about-contact-link"><a href="http://fb.me/HowToContactFB" style="color: #216fdb; text-decoration: none;">http://fb.me/HowToContactFB</a></p>
+                <!--About Section Icon and Text-->
+                <img class="about-icon" id="about-page-icon">
+                <p class="about-text" id="about-page-link"><a href="https://www.facebook.com/pages/category/internet-company" style="color: #216fdb; text-decoration: none;">Internet Company</a></p>
+
+            </div>
+
+            <!--Right Side-->
+            <div class="lowerside-right">
+                <img id="post-owner-profile" class="lowerside-right-icon" src="Fcebook Icon.png">
+                <p class="facebook">Facebook</p>
+
+                <!--Account Verification-->
+                <img class="lowerside-right-icon" id="post-verified-account" src="Verified.png" title="Verified Account">
+
+                <!--Post Timming-->
+                <p class="post-timming tooltip">20 hours ago<span class="tooltiptext" id="post-timming-tooltip">Friday, 4 August 2023 at 8:32 AM</span></p>
+                <p class="lowerside-right-text" id="post-dot-seperator">•</p>
+
+                <div class="tooltip">
+                <img class="lowerside-right-icon" id="post-public-icon" title="Shared with Public" src="public.png">
+                <span class="tooltiptext" id="post-public-icon-tooltip">Public</span>
+                </div>
+
+                <!--Post Description-->
+                <p class="post-description">Stay up-to-date on the latest news and events with Facebook 🤩. Check out your news feed to see what's happening in the world, and connect with friends and family 👫 to share your thoughts.</p>
+                <img class="post-img">
+
+                <img class="lowerside-right-icon" id="post-like-icon" src="post_like.png">
+                <img class="lowerside-right-icon" id="post-love-icon" src="love.png">
+
+                <p class="post-count-love">4.4 K</p>
+
+                <img class="lowerside-right-icon" id="post-comment-icon" src="comment.png">
+                <p class="tooltip" id="post-count-comment">2.5 K <span class="tooltiptext" id="post-count-comment-tooltip">Emily Johnson<br>Michael Lee<br>Olivia Patel<br>Ethan Chen<br>Ava Martinez<br>Noah Kim<br>Sophia Gupta<br>Liam Rodriguez</span></p>
+                
+                <img class="lowerside-right-icon" id="post-share-icon" src="share.png">
+                <p class="tooltip" id="post-count-share">303<span class="tooltiptext" id="post-count-share-tooltip">Anya Rose<br>Vi Keh Tory<br>Jaxon<br>Willow</span></p>
+
+                <p style="border-bottom: 1px solid #ced0d4; margin-left: 4%; margin-right: 4%;"></p>
+
+                <form>
+                    <!--Like on Post-->
+                    <input class="count-bottom1" type="button" value="Like">
+                    <!--Comment on Post-->
+                    <input class="count-bottom2" type="button" value="Comment">
+                </form>
+
+                <p style="border-bottom: 1px solid #ced0d4; margin-left: 4%; margin-right: 4%; margin-top: 1%;"></p>
+
+                <!--Commenter Profile-->
+                <img class="lowerside-right-icon" id="commenter-profile" src="People.png">
+                <!--Comment Background-->
+                <div id="comment-background">
+                    <!--Commenter Name-->
+                    <p class="commenter-name">Joana Almeida</p>
+                    <!--Comment-->
+                    <p class="comment">It's fantastic! Thank You🎉</p>
+                </div>
+
+                <!--Comment Timming-->
+                <p class="comment-time tooltip">9 h<span class="tooltiptext" id="comment-time-tooltip">Friday, 4 August 2023 at 11:32 PM</span></p>
+
+                <!--Me Profile-->
+                <img class="lowerside-right-icon" id="me-profile" src="Me.png">
+                <form>
+                    <input type="text" id="writecomment" placeholder="Write a Comment">
+                </form>
+            </div>
+
+            <!--Photo Section-->
+            <div class="photo-section" id="photos-section">
+                <!--Photo Text-->
+                <h3 class="photo-text" id="photo-heading">Photos</h3>
+                <p class="photo-text" id="photo-see-all">See all</p>
+                <!--Photos-->
+                <img class="photo-in-photo" id="photo1" src="1.jpg">
+                <img class="photo-in-photo" id="photo2" src="2.png">
+                <img class="photo-in-photo" id="photo3" src="3.jpg">
+                <img class="photo-in-photo" id="photo4" src="4.png">
+                <img class="photo-in-photo" id="photo5" src="5.jpg">
+                <img class="photo-in-photo" id="photo6" src="6.jpeg">
+            </div>
+
+            <!--Videos Section-->
+            <div class="video-section" id="videos-section">
+                <!--Videos Text-->
+                <h3 class="video-text" id="video-heading">Videos</h3>
+                <p class="video-text" id="video-see-all">See all</p>
+                <!--Video Cover-->
+                <img class="video-cover" src="Video_Cover.jpg">
+                <!--Video Timing-->
+                <div class="video-timing">1:08</div>
+                <!--Video Title-->
+                <p class="video-title">NEW to Facebook Groups! 🚨 There are now more ways to</p>
+                <!--Video Icon-->
+                <img class="video-icon" id="video-like-icon" src="post_like.png">
+                <img class="video-icon" id="video-love-icon" src="love.png">
+                <!--Counting-->
+                <p class="video-count-love">9.1 K</p>
+                <p class="video-count-view">213.6K views  · 44 weeks ago</p>
+            </div>
+
+            <!--Page transparency Section-->
+            <div class="page-transparency-section" id="transparency-section">
+                <!--Page transparency Text-->
+                <img class="page-transparency-icon" src="Fcebook Icon.png">
+                <h3 class="page-transparency-text">Page transparency</h3>
+                <p class="video-text" id="page-see-all" style="color:#216fdb; font-size: small; font-weight:light; padding-left: 85%; margin-top: -14%;cursor: pointer;">See all</p>
+                <!--Page transparency Description-->
+                <p class="page-transparency-desciption">Facebook is showing information to help you better understand the purpose of a Page. See actions taken by the people who manage and post content.</p>
+                <!--Responsible Text-->
+                <img class="responsible-background" src="background.png">
+                <div class="responsible">Facebook, Inc. is responsible for this Page.</div>
+            </div>            
+        </div>
+        
+        <script src="share-popup.js"></script>
+        <script src="see more-less & section adjustment.js"></script>
+    </body>
+</html>

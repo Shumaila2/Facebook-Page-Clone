@@ -1,0 +1,1261 @@
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+*{
+    box-sizing: border-box;
+}
+
+/*Tooltip*/
+.tooltip {
+    position: relative;
+}
+
+/*Tooltip and Tooltip text Styling*/
+.tooltip .tooltiptext {
+    visibility: hidden;
+    background-color: rgb(0, 0, 0, 0.70);
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
+
+
+    /* Position the tooltip */
+    position: absolute;
+    z-index: 1;
+}
+
+/*Hover*/
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+}
+
+/*Header*/
+.header{
+    width: 100%;
+    height: 25px;
+    margin-bottom: 10px;
+}
+
+/*Facebook Icon*/
+#corner-icon{
+    border-radius: 50%;
+}
+
+/*Search Box*/
+input[id=search]{
+    border-radius: 10px;
+    border: none;
+    background-color: #F0F2F5;
+    padding: 5px 0px 5px 25px;
+    background-image: url('searchicon.png');
+    background-size: 13px;
+    background-position: 7px 5px; 
+    background-repeat: no-repeat;
+    margin-bottom: 80px;
+    position: relative;
+    top: -6px;
+}
+
+/*Focus*/
+input[type=search]:focus {
+    border: 1px solid #ccc;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    outline: none;
+}
+
+/*Center Icons*/
+.img1{
+    position: absolute;
+    left: 30%;
+    transform: translate(-50%);
+}
+
+#watch{
+    left: 40%;
+}
+
+#marketplace{
+    left: 50%;
+}
+
+#frame{
+    left: 60%;
+}
+
+/*Center Icons Hover*/
+.img1:hover{
+    width: 30px;
+    cursor: pointer;
+}
+
+/*Active*/
+.img1:active{
+    width: 25px;
+    cursor: pointer;
+}
+
+/*Gray Background Icons*/
+.gray{
+    position: absolute;
+    left: 85%;
+    transform: translate(-50%);
+    width: 30px;
+}
+
+#gray2{
+    left: 89%
+}
+
+#gray3{
+    left: 93%;
+}
+
+#gray4 {
+    left: 97%;
+}
+
+/*Right Side Icon*/
+.img2{
+    position: absolute;
+    top: 14px;
+    transform: translate(-50%);
+    border-radius: 0;
+    width: 17px;
+}
+
+#dots-9{
+    left: 85%;
+}
+
+#messenger{
+    left: 89%;
+}
+
+#bell1{
+    left: 93%;
+}
+
+#bell2{
+    left: 97%;
+}
+
+/*Hover*/
+.img2:hover{
+    width: 20px;
+    cursor: pointer;
+}
+
+/*Active*/
+.img2:active{
+    width: 15px;
+    cursor: pointer;
+}
+
+/*Upper Side*/
+.upperside{
+    width: 100%;
+    height: 50%;
+    background-color: #ffffff;
+    border-top: 1px solid #e9e6e6;
+}
+
+/*Banner*/
+.banner{
+    background-image: url(Banner.jpg);
+    background-size: 820px 312px;
+    border-radius: 7px;
+    left: 16%;
+    position: absolute;
+}
+
+/*Cover Header*/
+.coverheader{
+    width: 884px;
+    height: 140px;
+    border-bottom: 1px solid #e9e6e6;
+    position: absolute;
+    left: 15%;
+    top: 37%;
+}
+
+#main-icon{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 50%;
+}
+
+/*User Name*/
+.username{
+    position: absolute;
+    font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
+    margin-left: 17%;
+    margin-top: -8%;
+}
+
+/*User Detail*/
+.userdetail{
+    position: absolute;
+    font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
+    margin-left: 17%;
+    margin-top: -4%;
+    font-size: smaller;
+}
+
+#mention-tooltip{
+    padding: 5px 0; 
+    width: 300px;
+}
+
+#follower-icon{
+    margin-left: 13%; 
+    margin-top: 11.5%;
+    width: 15px;
+}
+
+#follower-count{
+    margin-left: 30%;
+}
+
+#internet-company{
+    margin-left: 43%;
+}
+
+/*User Verification*/
+.user-verify{
+    width: "13px";
+    margin-left: 15%; 
+    margin-top: 8.3%;
+}
+
+/*Contact Us*/
+.contact-button{
+    background-color: #1b74e4;
+    color: white;
+    border: none;
+    border-radius: 4.5px;
+    padding: 10px 70px 10px 80px;
+    font-size: medium;
+    background-image: url('Link.png');
+    background-repeat: no-repeat;
+    background-position: 60px 10px;
+    margin-left: 67%;
+    margin-top: -7%;
+    position: absolute;
+}
+
+/*Hover*/
+.contact-button:hover{
+    cursor: pointer;
+    background-color: #1b71da;
+}
+
+/*Active*/
+.contact-button:active{
+    cursor: pointer;
+    background-size: 12px;
+    font-size: small;
+}
+
+/*Share Page*/
+.sharepage{
+    position: absolute;
+    font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
+    font-size: 12px;
+    margin-left: 77%;
+    margin-top: -2%;
+    cursor: pointer;
+}
+
+/*Share Page Icon*/
+.sharepage-icon{
+    margin-left: 74.9%; 
+    border-radius: 0; 
+    width: 13px; 
+    margin-top: -1.8%;
+}
+
+/*Pop-Up & Pop-Up Text Styling*/
+.popuptext{
+    background-color: whitesmoke;
+    border-radius: 10px;
+    position: absolute;
+    width: auto;
+    height: auto;
+    text-align: center;
+    z-index: 1;
+    padding: 5px 5px 50px 8px;
+    box-shadow: 0 2px 4px 2px rgba(0, 0, 0, 0.2);
+    right: 130px;
+    top: -90px;
+    font-weight: bolder;
+    font-size: xx-large;
+    font-style: italic;
+    visibility: hidden;
+}
+
+/*Share Popup Buttons Stylig*/
+.sharethis-inline-share-buttons{
+    margin-top: 50px; 
+    margin-left: 6px; 
+    width: 350px;
+}
+
+.sharepage .show{
+    visibility: visible;
+    -webkit-animation: fadeIn 1s both;
+    animation: fadeIn 1s both;
+}
+
+@-webkit-keyframes fadeIn {
+    from {opacity: 0 ;}
+    to {opacity: 1 ;}
+}
+
+@keyframes fadeIn {
+    from {opacity: 0 ;}
+    to {opacity: 1 ;}
+}
+
+/* The Close Button */
+.close {
+    position: absolute;
+    top: -2%;
+    right: 4%;
+    color: #000000;
+    font-size: 30px;
+    font-weight: bold;
+    transition: 0.1s;
+}
+
+.close:hover,
+.close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+hr{
+    margin-top: 133%;
+    margin-left: 12px;
+    width: 240px;
+    position: absolute;
+    border-color: lightgray;
+}
+
+/*Menu*/
+.menu{
+    width: 100%;
+    height: auto;
+    box-shadow:0 0.5px 2.5px 0 rgb(233, 230, 230);
+    top: 51.9%;
+    left: 0.4px;
+    padding: 35px;   
+    position: absolute;
+}
+
+/*Menu Text*/
+.menu a{
+    position: absolute;
+    font-family: Tahoma, Verdana, sans-serif;
+    font-size: small;
+    border-bottom: 3px solid transparent;
+    text-decoration: none;
+    color: black;
+    display: block;
+    left: 18%;
+    top: 50%;
+    cursor: pointer;
+}
+
+/*Menu Active Tab*/
+.menu a.active{
+    color: #1b74e4;
+    padding-bottom: 8px;
+    border-bottom: 3px solid #1b74e4;
+}
+
+#post-tab{
+    padding: 10px; 
+    margin-top: -1%;
+    cursor: pointer;
+}
+
+#about-tab{
+    padding-left: 5.5%;
+    cursor: pointer;
+}
+
+#video-tab{
+    padding-left: 10.5%;
+    cursor: pointer;
+}
+
+#photo-tab{
+    padding-left: 15.5%;
+    cursor: pointer;
+}
+
+#more-tab{
+    padding-left: 20.5%;
+    cursor: pointer;
+}
+
+#dropdown-tab{
+    padding-left: 38%; 
+    margin-top: 0.3%; 
+    position: absolute;
+    cursor: pointer;
+}
+
+/*Menu Like Button*/
+.like-button{
+    background-color: #E7F3FF;
+    color: #1b74e4;
+    border: none;
+    border-radius: 4.5px;
+    padding: 10px 40px 10px 60px;
+    font-size: medium;
+    background-image: url('Like.png');
+    background-repeat: no-repeat;
+    background-position: 35px 9px;
+    position: absolute;
+    left: 48%;
+    top: 30%;
+}
+
+/*Hover*/
+.like-button:hover{
+    cursor: pointer;
+}
+
+/*Active*/
+.like-button:active{
+    cursor: pointer;
+    background-size: 15px;
+    font-size: small;
+}
+
+/*Menu Messenger Button*/
+.messenger-button{
+    background-color: #E4E6EB;
+    color: black;
+    border: none;
+    border-radius: 4.5px;
+    padding: 10px 40px 10px 60px;
+    font-size: medium;
+    background-image: url('messenger.png');
+    background-size: 20px;
+    background-repeat: no-repeat;
+    background-position: 35px 9px;
+    position: absolute;
+    left: 59%;
+    top: 30%;
+}
+
+/*Hover*/
+.messenger-button:hover{
+    cursor: pointer;
+}
+
+/*Active*/
+.messenger-button:active{
+    cursor: pointer;
+    background-size: 15px;
+    font-size: small;
+}
+
+/*Menu Search Button*/
+.search-button{
+    background-color: #E4E6EB;
+    border: none;
+    border-radius: 4.5px;
+    padding: 12px 10px 10px 40px;
+    background-image: url('Black\ search.png');
+    background-repeat: no-repeat;
+    background-position: 18px 10px;
+    position: absolute;
+    left: 74%;
+    top: 30%;
+}
+
+/*Hover*/
+.search-button:hover{
+    cursor: pointer;
+}
+
+/*Active*/
+.search-button:active{
+    cursor: pointer;
+    background-size: 13px;
+}
+
+/*Menu Three-Dots Button*/
+.dots-button{
+    background-color: #E4E6EB;
+    border: none;
+    border-radius: 4.5px;
+    padding: 12px 5px 10px 40px;
+    background-image: url("3 dots.png");
+    background-repeat: no-repeat;
+    background-position: 14px 10px;
+    position: absolute;
+    left: 78.5%;
+    top: 30%;
+}
+
+/*Hover*/
+.dots-button:hover{
+    cursor: pointer;
+}
+
+/*Active*/
+.dots-button:active{
+    cursor: pointer;
+    background-size: 13px;
+}
+
+/*Lower Side*/
+.lowerside{
+    margin-top: 37.8%;
+    width: 100%;
+    box-sizing: border-box;
+    background-color: #F0F2F5;
+    min-height: 200vh;
+    position: relative;
+}
+
+/*Left Side*/
+.about-section{
+    width: 360px;
+    top: 5%;
+    margin-left: 17%;
+    margin-bottom: 0.5%;
+    margin-top: -6%;
+    border-radius: 8px;
+    display: block;
+    background-color: white;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    box-shadow: 0px 1px 2px 0px rgb(0, 0, 0, 0.2);
+    position: absolute;
+}
+
+/*Left Side Text*/
+.about-text{
+    font-family: "Segoe UI", Helvetica, Arial, sans-serif;
+    padding: 10px 16px 4px;
+    position: relative;
+}
+
+/*Left Side Icon*/
+.about-icon{
+    padding: 5px 16px 4px;
+    position: relative;
+    border: none;
+    border-radius: 0;
+}
+
+#about-heading{
+    font-weight: bolder;
+}
+
+#about-see-all{
+    color:#216fdb; 
+    font-size: small; 
+    font-weight:light; 
+    padding-left: 85%; 
+    margin-top: -14%;
+    cursor: pointer;
+}
+
+#about-first-phara{
+    font-size: 14px; 
+    padding-left: 13%; 
+    margin-top: -11%;
+}
+
+#about-second-phara{
+    font-size: 15px; 
+    padding-left: 13%; 
+    margin-top: -11%;
+}
+
+#about-like-icon{
+    bottom: -13px;
+}
+
+#about-like-number{
+    font-size: 15px; 
+    padding-left: 13%; 
+    margin-top: -7%;
+}
+
+#about-follow-icon{
+    margin-top: -6px;
+}
+
+#about-follow-number{
+    font-size: 15px; 
+    padding-left: 13%; 
+    margin-top: -11%;
+}
+
+#about-checkin-icon{
+    margin-top: -6px;
+}
+
+#about-checkin-number{
+    font-size: 15px; 
+    padding-left: 13%; 
+    margin-top: -11%;
+}
+
+#about-world-icon{
+    margin-top: -6px;
+}
+
+#about-contact-link{
+    font-size: 15px; 
+    padding-left: 13%; 
+    margin-top: -11%;
+}
+
+#about-page-icon{
+    margin-top: -6px; 
+    margin-left: 15px; 
+    background-image: url(file.png); 
+    background-repeat: no-repeat; 
+    background-position: 0px -300px; 
+    filter: contrast(0); 
+    height: 20px;
+    width: 20px;
+}
+
+#about-page-link{
+    font-size: 15px; 
+    padding-left: 13%; 
+    margin-top: -9%;
+}
+
+/*Hide Extra long text*/
+.text-preview{
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    overflow: hidden;
+    -webkit-box-orient: vertical;
+}
+
+/*Height after full text*/
+.about-fulltext{
+    height: 410px;
+}
+
+/*See More*/
+.seemore{
+    font-family: "Segoe UI", Helvetica, Arial, sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+    overflow: visible;
+    position: absolute;
+    left: 13%; 
+    bottom: 43%;
+}
+
+.seemore:hover{
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+/*See Less*/
+.seeless{
+    font-family: "Segoe UI", Helvetica, Arial, sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+    position: absolute;
+    display: none; 
+    left: 13%; 
+    bottom: 24.8%;
+}
+
+.seeless:hover{
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+/*Right Side*/
+.lowerside-right{
+    width: 480px;
+    top: 5%;
+    margin-left: 47%;
+    margin-bottom: 0.5%;
+    margin-top: -6%;
+    border-radius: 8px;
+    display: block;
+    background-color: white;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    box-shadow: 0px 1px 2px 0px rgb(0, 0, 0, 0.2);
+    position: absolute;
+}
+
+/*Right Side Text*/
+.lowerside-right-text{
+    font-family: "Segoe UI", Helvetica, Arial, sans-serif;
+    position: relative;    
+}
+
+/*Right Side Icon*/
+.lowerside-right-icon{
+    padding: 5px 16px 4px;
+    position: relative;
+    border: none;
+    border-radius: none;
+}
+
+#post-verified-account{
+    width: 42px; 
+    top: 22px; 
+    left: 132px; 
+    position: absolute;
+}
+
+#post-owner-profile{
+    width: 80px; 
+    margin-top: 10px;
+    border-radius: 50%;
+}
+
+.facebook{
+    font-weight: 600; 
+    font-size: 100; 
+    top: -65px; 
+    left: 75px;
+    font-family: "Segoe UI", Helvetica, Arial, sans-serif;
+    position: relative;    
+}
+
+.facebook:hover{
+    cursor: pointer; 
+    text-decoration: underline;
+}
+
+/*Post Description*/
+.post-description{
+    font-size: 15px; 
+    padding-left: 4%; 
+    padding-right: 4%; 
+    margin-top: -28%;
+    font-family: "Segoe UI", Helvetica, Arial, sans-serif;
+    position: relative;    
+}
+
+/*Post Timming*/
+.post-timming{
+    font-size: 13px; 
+    top: -80px; 
+    left: 75px; 
+    cursor: pointer;
+    font-family: "Segoe UI", Helvetica, Arial, sans-serif;
+    position: relative;    
+}
+
+#post-timming-tooltip{
+    width: 300px; 
+    padding: 10px; 
+    margin-left: -130px; 
+    top: 30px; 
+    position: relative;
+}
+
+#post-dot-seperator{
+    font-size: 13px; 
+    top: -108px; 
+    left: 155px;
+}
+
+#post-public-icon{
+    width: 45px; 
+    top: -140px; 
+    right: -150px;
+}
+
+#post-public-icon-tooltip{
+    position: relative; 
+    padding: 10px; 
+    font-size: small; 
+    left: 100px; 
+    top: -175px; 
+    width: 300px; 
+}
+
+.post-img{
+    border-radius: 0; 
+    width: 500px; 
+    height: 500px;
+    background-image: url(Post.png);
+}
+
+#post-like-icon{
+    z-index: 1;
+}
+
+#post-love-icon{
+    left: -40px;
+}
+
+/*Post Count Love*/
+.post-count-love{
+    margin-left: 11%;  
+    margin-top: -5.8%; 
+    font-size: 15px;
+    font-family: "Segoe UI", Helvetica, Arial, sans-serif;
+    position: relative;
+}
+
+#post-comment-icon{
+    border-radius: 0; 
+    left: 78%;  
+    margin-top: -7.3%; 
+    position: absolute;
+}
+
+#post-count-comment{
+    left: 73%; 
+    margin-top: -7.2%; 
+    font-size: 15px;
+    font-family: "Segoe UI", Helvetica, Arial, sans-serif;
+    position: relative;  
+}
+
+#post-count-comment:hover{
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+#post-count-comment-tooltip{
+    width: 100px; 
+    padding: 10px 10px; 
+    margin-left: -5%; 
+    top: 20px; 
+    text-align: left; 
+    font-size: 13px;
+}
+
+#post-share-icon{
+    border-radius: 0; 
+    left: 90%; 
+    margin-top: -8%;
+    position: absolute;
+}
+
+#post-count-share{
+    left: 87%;  
+    margin-top: -7.4%; 
+    font-size: 15px;
+    font-family: "Segoe UI", Helvetica, Arial, sans-serif;
+    position: relative;  
+}
+
+#post-count-share:hover{
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+#post-count-share-tooltip{
+    width: 90px; 
+    padding: 10px 10px; 
+    margin-left: -15%; 
+    top: 20px; 
+    text-align: left; 
+    font-size: 13px;
+}
+
+/*Like on Post*/
+.count-bottom1{
+    font-family: "Segoe UI", Helvetica, Arial, sans-serif;
+    font-weight: 600;
+    color: #65676b;
+    background-color: white;
+    border: none;
+    border-radius: 4.5px;
+    padding: 10px 70px 9px 100px;
+    font-size: medium;
+    background-image: url('stroke_like.png');
+    background-size: 20px;
+    background-repeat: no-repeat;
+    background-position: 70px 9px;
+    margin-left: 5%;
+    margin-top: -5%;
+    position: relative;
+}
+
+.count-bottom1:hover{
+    background-color: #efefef;
+    cursor: pointer;
+}
+
+.count-bottom1:active{
+    background-color: #efefef;
+    cursor: pointer;
+    font-size: 14px;
+    background-size: 18px;
+}
+
+/*Comment on Post*/
+.count-bottom2{
+    font-family: "Segoe UI", Helvetica, Arial, sans-serif;
+    font-weight: 600;
+    color: #65676b;
+    background-color: white;
+    border: none;
+    border-radius: 4.5px;
+    padding: 10px 60px 9px 100px;
+    font-size: medium;
+    background-image: url('comment.png');
+    background-size: 20px;
+    background-repeat: no-repeat;
+    background-position: 70px 12px;
+    margin-left: 1%;
+    margin-top: -2.5%;
+    position: absolute;
+}
+
+.count-bottom2:hover{
+    background-color: #efefef;
+    cursor: pointer;
+}
+
+.count-bottom2:active{
+    background-color: #efefef;
+    cursor: pointer;
+    font-size: 14px;
+    background-size: 18px;
+}
+
+input[id=writecomment]{
+    background-image: url('Reaction.png');
+    background-repeat: no-repeat;
+    background-position: 305px 5px;
+    padding: 10px 230px 5px 10px;
+    margin-left: 11%;
+    margin-top: -8%;
+    position: absolute;
+    background-color: #F0F2F5;
+    border: 0;
+    border-radius: 20px;
+}
+
+#comment-background{
+    background-color: #F0F2F5; 
+    border-radius: 20px; 
+    display: inline-block; 
+    padding: 0px 10px;
+}
+
+/*Commenter Name*/
+.commenter-name{
+    font-size: 13px; 
+    font-weight: 500; 
+    cursor: pointer;
+    font-family: "Segoe UI", Helvetica, Arial, sans-serif;
+    position: relative;    
+}
+
+/*Comment*/
+.comment{
+    font-size: 15px; 
+    top: -6px;
+    font-family: "Segoe UI", Helvetica, Arial, sans-serif;
+    position: relative;    
+}
+
+.comment-time{
+    font-size: 11px; 
+    left: 17%; 
+    top: -10px; 
+    color: #65676b;
+    font-family: "Segoe UI", Helvetica, Arial, sans-serif;
+    position: relative;
+}
+
+.comment-time:hover{
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+#comment-time-tooltip{
+    width: 300px; 
+    padding: 10px; 
+    margin-left: 1%; 
+    top: 20px; 
+    position: relative;
+}
+
+/*Photos Section*/
+.photo-section{
+    width: 360px;
+    top: 32%;
+    margin-left: 17%;
+    margin-bottom: 0.5%;
+    margin-top: -6%;
+    border-radius: 8px;
+    display: block;
+    background-color: white;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    box-shadow: 0px 1px 2px 0px rgb(0, 0, 0, 0.2);
+    position: absolute;
+    cursor: pointer;
+}
+
+/*Photo Text*/
+.photo-text{
+    font-family: "Segoe UI", Helvetica, Arial, sans-serif;
+    padding: 10px 16px 4px;
+    position: relative;
+}
+
+.photo-in-photo{
+    border-radius: 0; 
+    width: 104px; 
+    height: 104px;
+    margin: 15px;
+    margin-top: 5px;
+}
+
+#photo-heading{
+    font-weight: bolder;
+}
+
+#photo-see-all{
+    color:#216fdb; 
+    font-size: small; 
+    font-weight:light; 
+    padding-left: 85%; 
+    margin-top: -14%;
+    cursor: pointer;
+}
+
+#photo1{
+    border-top-left-radius: 10px;
+} 
+
+#photo2{
+    margin-left: -9px;
+} 
+
+#photo3{
+    border-top-right-radius: 10px; 
+    margin-right: 5px; 
+    margin-left: -9px;
+} 
+
+#photo4{
+    border-bottom-left-radius: 10px;  
+    margin-top: -10px;
+} 
+
+#photo5{
+    margin-left: -9px; 
+    margin-top: -10px;
+} 
+
+#photo6{
+    border-bottom-right-radius: 10px; 
+    margin-right: 5px; 
+    margin-left: -9px;  
+    margin-top: -10px;
+}
+
+/*Video Section*/
+.video-section{
+    width: 360px;
+    top: 50.8%;
+    margin-left: 17%;
+    margin-bottom: 0.5%;
+    margin-top: -6%;
+    border-radius: 8px;
+    display: block;
+    background-color: white;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    box-shadow: 0px 1px 2px 0px rgb(0, 0, 0, 0.2);
+    position: absolute;
+    cursor: pointer;
+}
+
+/*Video Text*/
+.video-text{
+    font-family: "Segoe UI", Helvetica, Arial, sans-serif;
+    padding: 10px 16px 4px;
+    position: relative;
+}
+
+#video-see-all{
+    color:#216fdb; 
+    font-size: small; 
+    font-weight:light; 
+    padding-left: 85%; 
+    margin-top: -14%;
+    cursor: pointer;
+}
+
+/*Video Cover*/
+.video-cover{
+    border-radius: 7px; 
+    width: 340px; 
+    height: 200px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    object-fit:cover;
+}
+
+.video-cover:hover{
+    cursor: pointer;
+    filter: brightness(95%);
+}
+
+/*Video Timing*/
+.video-timing{
+    background-color: rgb(0, 0, 0, 0.5);
+    color: white;
+    width: 50px;
+    height: 22px;
+    bottom: 100px;
+    right: 16px;
+    position: absolute;
+    border-radius: 4px;
+    text-align: center;
+}
+
+/*Video Title*/
+.video-title{
+    font-family: "Segoe UI", Helvetica, Arial, sans-serif;
+    font-size: 17px;
+    font-weight: 600;
+    padding-left: 10px;
+    padding-right: 10px;
+    bottom: 20px;
+    position: relative;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.video-title:hover{
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+/*Video Icon*/
+.video-icon{
+    padding-left: 12px;
+    padding-right: 22px;
+    bottom: 35px;
+    position: relative;
+    border: none;
+    border-radius: 0;
+}
+
+#video-like-icon{
+    z-index: 1;
+}
+
+#video-love-icon{
+    left: -39.5px;
+}
+
+/*Video Count Love*/
+.video-count-love{
+    margin-left: 14%;  
+    margin-top: -16%; 
+    font-size: 14px;
+    font-family: "Segoe UI", Helvetica, Arial, sans-serif;
+    position: relative;
+}
+
+.video-count-love:hover{
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+/*Video Couut View*/
+.video-count-view{
+    left: 12px; 
+    margin-top: -3%; 
+    font-size: 13px; 
+    font-weight: 400; 
+    color: #65676b;
+    font-family: "Segoe UI", Helvetica, Arial, sans-serif;
+    position: relative;
+}
+
+.video-count-view:hover{
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+/*Page transparency Section*/
+.page-transparency-section{
+    width: 360px;
+    top: 51%;
+    margin-left: 17%;
+    margin-bottom: 0.5%;
+    margin-top: 24%;
+    padding-bottom: 20px;
+    border-radius: 8px;
+    display: block;
+    background-color: white;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    box-shadow: 0px 1px 2px 0px rgb(0, 0, 0, 0.2);
+    position: absolute;
+    cursor: pointer;
+}
+
+/*Page transparency Icon*/
+.page-transparency-icon{
+    position: relative;
+    width: 20px;
+    top: 45px;
+    left: 15px;
+    border-radius: 50%;
+}
+
+/*Page transparency Text*/
+.page-transparency-text{
+    font-family: "Segoe UI", Helvetica, Arial, sans-serif;
+    padding-left: 12%;
+    position: relative;
+}
+
+/*Page transparency Description*/
+.page-transparency-desciption{
+    font-family: "Segoe UI", Helvetica, Arial, sans-serif;
+    color: #65676b;
+    font-size: 15px;
+    font-weight: 400;
+    word-wrap: break-word;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+/*Responsible*/
+.responsible{
+    background-image: url(responsible.png);
+    background-repeat: no-repeat;
+    background-position: 4% 4%;
+    background-size: 20px;
+    font-family: "Segoe UI", Helvetica, Arial, sans-serif;
+    padding-left: 12%;
+    font-weight: 600;
+    position: relative;
+}
+
+/*Responsible Background*/
+.responsible-background{
+    width: 32px; 
+    position: absolute; 
+    top: 78%; 
+    left: 1.9%; 
+    z-index: 0;
+}

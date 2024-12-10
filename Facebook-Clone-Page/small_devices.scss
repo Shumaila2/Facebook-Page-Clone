@@ -1,0 +1,837 @@
+/* Small devices (portrait tablets and large phones, 600px to 768px) */
+@media only screen and (min-width: 600px) and (max-width: 767px) {
+    body {
+        display: block;
+        margin-top: 8px;
+        margin-left: 0;
+        margin-right: 0;
+        margin-bottom: 8px;
+    }
+
+    /*Header*/
+    .header{
+        width: 100%;
+        height: 38px;
+        margin-bottom: 10px;
+    }
+
+    #corner-icon{
+        width: 40px;
+        margin-left: 16px;
+    }
+
+    /*Search Box*/
+    input[id=search]{
+        border-radius: 50px;
+        border: none;
+        background-color: #F0F2F5;
+        padding: 8px 0px 8px 35px;
+        background-image: url('searchicon.png');
+        background-size: 13px;
+        background-position: 15px 8px; 
+        background-repeat: no-repeat;
+        margin-bottom: 80px;
+        margin-left: 65px;
+        position: relative;
+        top: -37px;
+        display: block;
+    }
+
+    /*Center Icons*/
+    .img1{
+        display: none;
+    }
+
+    /*Gray Background Icons*/
+    .gray{
+        position: absolute;
+        left: 64%;
+        transform: translate(-50%);
+        width: 40px;
+    }
+
+    #gray2{
+        left: 74%;
+    }
+
+    #gray3{
+        left: 84%;
+    }
+
+    #gray4{
+        left: 94%;
+    }
+    
+    /*Right Side Icon*/
+    .img2{
+        position: absolute;
+        top: 17px;
+        transform: translate(-50%);
+        border-radius: 0;
+        //Active
+        &:active{
+            width: 15px;
+    }
+    }
+
+    #dots-9{
+        width: 3.5%;
+        left: 64%;
+        top: 1.8%;
+    }
+
+    #messenger{
+        left: 74%;
+        width: 3.5%;
+        top: 1.8%;
+    }
+    
+    #bell1{
+        left: 84%;
+        width: 3.5%;
+        top: 1.8%;
+    }
+    
+    #bell2{
+        left: 94%;
+        width: 3.5%;
+        top: 1.8%;
+    }
+    
+
+    /*Banner*/
+    .banner{
+        background-image: url(mobile-banner.jpg);
+        width: 100%;
+        height: 200px;
+        left: -0%;
+        border-radius: 0;
+    }
+
+    /*Cover Header*/
+    .coverheader{
+        border-bottom: none;
+    }
+
+    #main-icon{
+        width: 168px;
+        height: 168px;
+        margin-top: -22%;
+        left: 15%;
+        position: absolute;
+    }
+
+    /*User Name*/
+    .username{
+        left: -2%;
+        top: 35%;
+        font-size: 33px;
+        font-weight: 700;
+    }
+
+    /*User Verification*/
+    .user-verify{
+        width: "20px";
+        margin-left: 34%; 
+        margin-top: -5.8%;
+    }
+
+    #mention{
+        display: none;
+    }
+
+    #seperator{
+        display: none;
+    }
+
+    #internet-company{
+        display: none;
+    }
+
+    #follower-icon{
+        margin-left: 17.5%; 
+        margin-top: 3.5%;
+        width: 15px;
+    }
+    
+    #follower-count{
+        margin-left: 20%;
+        margin-top: 3.5%;
+    }
+
+    /*Contact Us*/
+    .contact-button{
+        background-color: #1b74e4;
+        color: white;
+        border: none;
+        border-radius: 4.5px;
+        padding: 10px 25px 10px 40px;
+        font-size: 14px;
+        background-image: url('Link.png');
+        background-repeat: no-repeat;
+        background-position: 18px 10px;
+        background-size: 14px;
+        left: 6.5%;
+        top: -30%;
+        position: absolute;
+
+        &:active{
+            background-size: 12px;
+            font-size: small;
+        }
+    }
+
+    /*Share Page Text*/
+    .sharepage{
+        position: absolute;
+        font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
+        font-size: 12px;
+        margin-left: 21%;
+        margin-top: 6.5%;
+    }
+
+    /*Share Page Icon*/
+    .sharepage-icon{
+        margin-left: 19%; 
+        border-radius: 0; 
+        width: 13px; 
+        margin-top: 6.6%;
+    }
+
+    /*Pop-Up & Pop-Up Text Styling*/
+    .popuptext{
+        background-color: whitesmoke;
+        border-radius: 10px;
+        position: absolute;
+        width: 250px;
+        height: 120px;
+        text-align: center;
+        z-index: 1;
+        padding: 5px 5px 50px 8px;
+        box-shadow: 0 2px 4px 2px rgba(0, 0, 0, 0.2);
+        right: -75px;
+        top: -90px;
+        font-weight: bolder;
+        font-size: x-large;
+        font-style: italic;
+        visibility: hidden;
+    }
+
+    /*Share Popup Buttons Stylig*/
+    .sharethis-inline-share-buttons{
+        margin-top: 25px; 
+        margin-left: 8px; 
+        width: 220px;
+    }
+
+    .sharepage .show{
+        visibility: visible;
+        -webkit-animation: fadeIn 1s both;
+        animation: fadeIn 1s both;
+    }
+    
+    @-webkit-keyframes fadeIn {
+        from {opacity: 0 ;}
+        to {opacity: 1 ;}
+    }
+    
+    @keyframes fadeIn {
+        from {opacity: 0 ;}
+        to {opacity: 1 ;}
+    }
+    
+    /* The Close Button */
+    .close {
+        position: absolute;
+        top: -2%;
+        right: 4%;
+        color: #000000;
+        font-size: 20px;
+        font-weight: bold;
+        transition: 0.1s;
+
+        &:hover,
+        &:focus {
+        color: #bbb;
+        text-decoration: none;
+    }
+    }
+
+    /*Menu Like Button*/
+    .like-button{
+        background-color: #E7F3FF;
+        color: #1b74e4;
+        border: none;
+        border-radius: 4.5px;
+        padding: 10px 30px 10px 60px;
+        font-size: medium;
+        background-image: url('Like.png');
+        background-repeat: no-repeat;
+        background-position: 29px 9px;
+        position: absolute;
+        left: 44%;
+        top: -62%;
+    }
+
+    hr{
+        margin-top:75%;
+        
+        padding-left: 16px;
+        padding-right: 16px;
+        width: 568px;
+        position: absolute;
+        border-color: lightgray;
+    }
+
+    .menu{
+        box-shadow: none;
+    }
+
+    /*Menu Messenger Button*/
+    .messenger-button{
+        display: none;
+    }
+
+    /*Menu Search Button*/
+    .search-button{
+        background-color: #E4E6EB;
+        border: none;
+        border-radius: 4.5px;
+        padding: 12px 20px 10px 50px;
+        background-image: url('Black\ search.png');
+        background-repeat: no-repeat;
+        background-position: 30px 10px;
+        position: absolute;
+        margin-left: -8.5%;
+        top: -61%;
+        display: block;
+    }
+
+    /*Menu Three-Dots Button*/
+    .dots-button{
+        background-color: #E4E6EB;
+        border: none;
+        border-radius: 4.5px;
+        padding: 12px 5px 8px 40px;
+        background-image: url("3 dots.png");
+        background-repeat: no-repeat;
+        background-size: 15px;
+        background-position: 14px 10px;
+        position: absolute;
+        left: 89%;
+        top: 24%;
+    }
+
+    /*Post Tab*/
+    #post-tab{
+        top: 30%;
+        z-index: 1;
+        margin-left: -85px;
+        font-weight: 600;
+        font-size: 15px;
+        font-family: "Segoe UI", Helvetica, Arial, sans-serif;
+    }
+
+    /*About Tab*/
+    #about-tab{
+        font-weight: 600;
+        font-size: 15px;
+        font-family: "Segoe UI", Helvetica, Arial, sans-serif;
+        margin-left: -5%;
+        top: 37%;
+        display: block;
+    }
+
+    /*Video Tab*/
+    #video-tab{
+        font-weight: 600;
+        font-size: 15px;
+        font-family: "Segoe UI", Helvetica, Arial, sans-serif;
+        margin-left: 4%;
+        top: 37%;
+        display: block;
+    }
+
+    /*Photo Tab*/
+    #photo-tab{
+        font-weight: 600;
+        font-size: 15px;
+        font-family: "Segoe UI", Helvetica, Arial, sans-serif;
+        margin-left: 12.5%;
+        top: 37%;
+        display: block;
+    }
+
+    /*More Tab*/
+    #more-tab{
+        top: 37%;
+        z-index: 1;
+        margin-left: 133px;
+        font-weight: 600;
+        font-size: 15px;
+        font-family: "Segoe UI", Helvetica, Arial, sans-serif;
+    }
+
+    /*Dropdown Tab*/
+    #dropdown-tab{
+        top: 43%;
+        z-index: 1;
+        margin-left: 140px;
+        font-weight: 600;
+        font-size: 16px;
+        font-family: "Segoe UI", Helvetica, Arial, sans-serif;
+    }
+
+    /*Lower Side*/
+    .lowerside{
+        border-top: 2px solid #e9e6e6;
+        margin-top: 83%;
+        padding: 0;   
+        overflow-x: hidden;
+        width: 100%;
+        min-height: 350vh;
+    }
+
+    /*About Section*/
+    .about-section{
+        top: 1.4%;
+        left: -14.6%;
+        width: 570px;
+    }
+
+    #about-heading{
+        left: 10px;
+    }
+
+    #about-see-all{
+        color:#216fdb; 
+        font-size: small; 
+        font-weight:light; 
+        padding-left: 90%; 
+        margin-top: -10%;
+    }
+
+    #about-first-i{
+        width: 52px;
+        margin-left: 10px;
+        margin-top: 10px;
+    }
+    
+    #about-first-phara{
+        font-size: 14px; 
+        padding-left: 12%; 
+        padding-right: 30px;
+        margin-top: -40px;
+    }
+
+    #about-second-i{
+        width: 52px;
+        margin-left: 10px;
+    }
+    
+    #about-second-phara{
+        font-size: 14px; 
+        padding-left: 12%; 
+        padding-right: 30px;
+        margin-top: -36px;
+        line-height: 22px;
+    }
+
+    /*See More*/
+    .seemore{
+        font-family: "Segoe UI", Helvetica, Arial, sans-serif;
+        font-size: 14px;
+        font-weight: 600;
+        overflow: visible;
+        position: absolute;
+        left: 12%; 
+        bottom: 48%;
+    }
+
+    /*See Less*/
+    .seeless{
+        font-family: "Segoe UI", Helvetica, Arial, sans-serif;
+        font-size: 14px;
+        font-weight: 600;
+        position: absolute;
+        display: none; 
+        left: 12%; 
+        bottom: 31%;
+    }
+
+    #about-like-icon{
+        width: 52px;
+        margin-left: 10px;
+        bottom: -16px;
+    }
+    
+    #about-like-number{
+        font-size: 14px; 
+        padding-left: 12%; 
+        margin-top: -3.5%;
+    }
+    
+    #about-follow-icon{
+        width: 52px;
+        margin-left: 10px;
+        bottom: -7px;
+    }
+    
+    #about-follow-number{
+        font-size: 14px; 
+        padding-left: 12%; 
+        margin-top: -5%;
+    }
+    
+    #about-checkin-icon{
+        width: 50px;
+        margin-left: 10px;
+        bottom: -7px;
+    }
+    
+    #about-checkin-number{
+        font-size: 14px; 
+        padding-left: 12%; 
+        margin-top: -5.5%;
+    }
+    
+    #about-world-icon{
+        width: 52px;
+        margin-left: 10px;
+        bottom: -10px;
+    }
+    
+    #about-contact-link{
+        font-size: 14px; 
+        padding-left: 12%; 
+        margin-top: -5%;
+    }
+    
+    #about-page-icon{
+        margin-top: 1%;
+        margin-bottom: 7%; 
+        margin-left: 26px; 
+        background-image: url(file.png); 
+        background-repeat: no-repeat; 
+        background-position: 0px -300px; 
+        height: 20px;
+        width: 20px;
+    }
+    
+    #about-page-link{
+        font-size: 14px; 
+        padding-left: 12%; 
+        margin-top: -12.5%;
+    }
+
+    /*Photos Section*/
+    .photo-section{
+        top: 16.5%;
+        left: -14.6%;
+        width: 570px;
+    }
+
+    #photo-heading{
+        left: 10px;
+    }
+    
+    #photo-see-all{
+        color:#216fdb; 
+        font-size: small; 
+        font-weight:light; 
+        padding-left: 90%; 
+        margin-top: -10%;
+    }
+    
+    #photo1{
+        border-top-left-radius: 10px;
+        margin-left: 8%;
+        width: 150px;
+    } 
+    
+    #photo2{
+        border-top-right-radius: 0; 
+        margin-left: -4px;
+        width: 150px;
+    } 
+    
+    #photo3{
+        border-bottom-left-radius: 0;
+        border-top-right-radius: 10px; 
+        margin-top: -10px;
+        margin-left: -3px;
+        width: 150px;
+    } 
+    
+    #photo4{
+        border-bottom-left-radius: 10px;  
+        margin-top: -10px;
+        display: block;
+        margin-left: 8%;
+        width: 150px;
+    } 
+    
+    #photo5{
+        border-bottom-right-radius: 0;  
+        margin-left: 37%; 
+        margin-top: -50%;
+        width: 150px;
+    } 
+    
+    #photo6{
+        border-bottom-left-radius: 10px; 
+        border-bottom-right-radius: 0; 
+        margin-left: 66%;  
+        margin-top: -22%;
+        display: block;
+        width: 150px;
+    }
+
+    /*Video Section*/
+    .video-section{
+        top: 26.5%;
+        left: -14.6%;
+        width: 570px;
+    }
+
+    #video-see-all{
+        color:#216fdb; 
+        font-size: small; 
+        font-weight:light; 
+        padding-left: 90%; 
+        margin-top: -10%;
+    }
+
+    /*Video Cover*/
+    .video-cover{
+        border-radius: 7px; 
+        width: 500px; 
+        height: 300px;
+        margin-bottom: 10px;
+        margin-left: 33.5px;
+        object-fit: cover;
+    }
+
+    /*Video Timing*/
+    .video-timing{
+        background-color: rgb(0, 0, 0, 0.5);
+        color: white;
+        width: 45px;
+        height: 23px;
+        bottom: 20%;
+        right: 45px;
+        padding-top: 2px;
+        font-size: 15px;
+        position: absolute;
+        border-radius: 4px;
+        text-align: center;
+    }
+
+    /*Video Title*/
+    .video-title{
+        font-family: "Segoe UI", Helvetica, Arial, sans-serif;
+        font-size: 15px;
+        font-weight: 600;
+        padding-left: 40px;
+        padding-right: 24%;
+        bottom: 15px;
+        position: relative;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+    }
+
+    #video-like-icon{
+        top: -48px;
+        z-index: 1;
+        width: 55px;
+        left: 77%;
+    }
+    
+    #video-love-icon{
+        top: -48px;
+        width: 53px;
+        left: 69.5%;
+    }
+
+    /*Video Count Love*/
+    .video-count-love{
+        margin-left: 88%;  
+        top: 112.5%;
+        font-size: 12px;
+        font-family: "Segoe UI", Helvetica, Arial, sans-serif;
+        position: absolute;
+    }
+
+    /*Video Couut View*/
+    .video-count-view{
+        left: 44px; 
+        margin-top: -7%; 
+        font-size: 12px; 
+        font-weight: 400; 
+        color: #65676b;
+        font-family: "Segoe UI", Helvetica, Arial, sans-serif;
+        position: relative;
+    }
+
+    /*Page transparency Section*/
+    .page-transparency-section{
+        display: none;
+    }
+
+    /*Right Side*/
+    .lowerside-right{
+        top: 40.4%;
+        left: -44.5%;
+        width: 570px;
+    }
+
+    /*Post Description*/
+    .post-description{
+        font-size: 15px; 
+        padding-left: 4%; 
+        padding-right: 4%; 
+        margin-top: -20%;
+        font-family: "Segoe UI", Helvetica, Arial, sans-serif;
+        position: relative;    
+    } 
+
+    .post-img{
+        border-radius: 0; 
+        width: 570px; 
+        height: 550px;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-image: url(Post.png);
+    }
+
+    #post-like-icon{
+        z-index: 1;
+        width: 51px;
+    }
+    
+    #post-love-icon{
+        left: -40px;
+        width: 49px;
+    }
+
+    /*Post Count Love*/
+    .post-count-love{
+        margin-left: 10%;  
+        top: -84px; 
+        margin-top: 10%;
+        font-size: 14px;
+        font-family: "Segoe UI", Helvetica, Arial, sans-serif;
+        position: relative;
+    }
+
+    #post-comment-icon{
+        border-radius: 0; 
+        left: 71%;  
+        margin-top: -19%; 
+        position: absolute;
+        width: 52px;
+    }
+    
+    #post-count-comment{
+        left: 79%; 
+        margin-top: -12.5%; 
+        top: -35px;
+        font-size: 14px;
+        font-family: "Segoe UI", Helvetica, Arial, sans-serif;
+        position: relative;  
+    }
+    
+    #post-share-icon{
+        border-radius: 0; 
+        left: 85%; 
+        margin-top: -13%;
+        position: absolute;
+        width: 52px;
+    }
+    
+    #post-count-share{
+        left: 92%;  
+        margin-top: -12%; 
+        font-size: 14px;
+        font-family: "Segoe UI", Helvetica, Arial, sans-serif;
+        position: relative;  
+    }
+
+    /*Like on Post*/
+    .count-bottom1{
+        padding: 15px 70px 15px 100px;
+        background-size: 23px;
+        background-repeat: no-repeat;
+        background-position: 60px 15px;
+        margin-left: 7%;
+        margin-top: -2%;
+        margin-bottom: 0;
+        font-size: 18px;
+    }
+
+    /*Comment on Post*/
+    .count-bottom2{
+        padding: 15px 60px 15px 100px;
+        background-size: 23px;
+        background-repeat: no-repeat;
+        background-position: 58px 17px;
+        margin-left: 10%;
+        margin-top: -2%;
+        font-size: 18px;
+    }
+
+    #me-profile{
+        width: 67px;
+    }
+
+    input[id=writecomment]{
+        background-image: url('Reaction.png');
+        background-repeat: no-repeat;
+        background-position: 370px 5px;
+        padding: 10px 300px 5px 10px;
+        margin-left: 11%;
+        margin-top: -7%;
+        position: absolute;
+        background-color: #F0F2F5;
+        border: 0;
+        border-radius: 20px;
+    }
+
+    #commenter-profile{
+        width: 67px;
+    }   
+    
+    #comment-background{
+        background-color: #F0F2F5; 
+        border-radius: 20px; 
+        display: inline-block; 
+        padding: 0px 10px;
+    }
+    
+    /*Commenter Name*/
+    .commenter-name{
+        font-size: 14px; 
+        font-weight: 500; 
+        cursor: pointer;
+        font-family: "Segoe UI", Helvetica, Arial, sans-serif;
+        position: relative;    
+    }
+    
+    /*Comment*/
+    .comment{
+        font-size: 14px; 
+        top: -6px;
+        font-family: "Segoe UI", Helvetica, Arial, sans-serif;
+        position: relative;    
+    }
+    
+    .comment-time{
+        font-size: 10px; 
+        left: 15%; 
+        top: -10px; 
+        color: #65676b;
+        font-family: "Segoe UI", Helvetica, Arial, sans-serif;
+        position: relative;
+    }
+}
